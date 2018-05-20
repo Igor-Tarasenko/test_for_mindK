@@ -7,12 +7,17 @@ body {
     font-family: Tahoma;
 }
 .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .left-block__field {
     width: 200px;
     text-align: center;
     padding: 5px 10px 0 6px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), to(#fcfcfc));
+    background: -webkit-linear-gradient(bottom, #e0e0e0, #fcfcfc);
+    background: -o-linear-gradient(bottom, #e0e0e0, #fcfcfc);
     background: linear-gradient(to top, #e0e0e0, #fcfcfc);
 }
 .left-block__field img {
@@ -28,25 +33,37 @@ body {
 }
 .line {
     height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#187dbc), to(#ffffff));
+    background: -webkit-linear-gradient(left, #187dbc, #ffffff);
+    background: -o-linear-gradient(left, #187dbc, #ffffff);
     background: linear-gradient(to right, #187dbc, #ffffff);
     margin: 2px 0 18px;
 }
 .information-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     border: 1px solid;
 }
 .information-block:first-child {
     border-bottom: none;
- }
+}
 .information-block__img-block {
     padding: 29px 54px;
     border-right: 1px solid;
 }
 
 .information-block__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px 23px;
 }
@@ -56,8 +73,14 @@ body {
     text-align: left;
 }
 .checkbox-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 .checkbox-list {
@@ -91,7 +114,11 @@ body {
     cursor: pointer;
 }
 .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 10px;
 }
