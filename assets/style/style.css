@@ -53,7 +53,10 @@ body {
     padding: 29px 54px;
     border-right: 1px solid;
 }
-
+.information-block__img-block img {
+    width: 210px;
+    height: 201px;
+}
 .information-block__information {
     display: -webkit-box;
     display: -ms-flexbox;
