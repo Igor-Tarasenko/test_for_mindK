@@ -13,6 +13,7 @@ body {
 }
 .left-block__field {
     width: 200px;
+    height: 100vh;
     text-align: center;
     padding: 5px 10px 0 6px;
     background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), to(#fcfcfc));
@@ -30,14 +31,20 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #177cbc;
+    position: relative;
+    margin: 0px 0 18px;
 }
-.line {
+.main-title:after {
+    content: '';
     height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     background: -webkit-gradient(linear, left top, right top, from(#187dbc), to(#ffffff));
     background: -webkit-linear-gradient(left, #187dbc, #ffffff);
     background: -o-linear-gradient(left, #187dbc, #ffffff);
     background: linear-gradient(to right, #187dbc, #ffffff);
-    margin: 2px 0 18px;
 }
 .information-block {
     display: -webkit-box;
@@ -45,17 +52,28 @@ body {
     display: flex;
     width: 100%;
     border: 1px solid;
-}
-.information-block:first-child {
     border-bottom: none;
+}
+.last {
+    border-bottom: 1px solid!important;
 }
 .information-block__img-block {
     padding: 29px 54px;
     border-right: 1px solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .information-block__img-block img {
-    width: 210px;
-    height: 201px;
+    max-width: 210px;
+    max-height: 201px;
+    border: 1px solid;
 }
 .information-block__information {
     display: -webkit-box;
@@ -69,6 +87,7 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px 23px;
+    width: 100%;
 }
 .title {
     font-size: 18px;
@@ -98,7 +117,8 @@ body {
     position: absolute;
     top: 2px;
     right: 4px;
-    left: 2px;
+    left: 3px;
+    border-radius: 10px;
 }
 .checkbox-block__button {
     position: relative;
@@ -123,6 +143,9 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-top: 10px;
 }
 .number__pagination {
